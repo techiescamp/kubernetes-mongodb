@@ -1,7 +1,6 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  creationTimestamp: null
   labels:
     app: mongo-client
   name: mongo-client
@@ -10,10 +9,8 @@ spec:
   selector:
     matchLabels:
       app: mongo-client
-  strategy: {}
   template:
     metadata:
-      creationTimestamp: null
       labels:
         app: mongo-client
     spec:
